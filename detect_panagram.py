@@ -15,7 +15,6 @@ def is_pangram(s):
         else:
             letter_count[character.lower()] += 1
     for letter,count in letter_count.items():
-        print(letter,count)
         if count == 0:
             return False
     return True
