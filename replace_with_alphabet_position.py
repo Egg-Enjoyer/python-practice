@@ -1,6 +1,6 @@
 import string
 
-def creat_alphabet_dic():
+def create_alphabet_dic():
     result = {}
     alphabet = list(string.ascii_lowercase)
     position = 1
@@ -13,7 +13,7 @@ def creat_alphabet_dic():
 def alphabet_position(text):
     text = text.lower()
     result = ""
-    position_dic = creat_alphabet_dic()
+    position_dic = create_alphabet_dic()
     for letter in text:
         if letter in list(string.ascii_lowercase):
             result += f"{position_dic[letter]} "
